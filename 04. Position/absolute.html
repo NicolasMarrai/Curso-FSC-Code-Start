@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute</title>
+    <style>
+      .pai {
+        position: relative;
+        border: 3px solid red;
+        height: 300px;
+      }
+
+      .filho- {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position: absolute;</h2>
+
+    <p>
+      Um elemento com a propriedade position: absolute; é posicionado em relação
+      ao ancestral posicionado mais próximo com position: relative.
+    </p>
+
+    <div class="pai">
+      <div class="filho-">Primeiro filho</div>
+      <div class="filho-2">Segundo filho</div>
+    </div>
+  </body>
+</html>

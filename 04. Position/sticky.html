@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Sticky</title>
+    <style>
+      body {
+        height: 2000px; /* Para permitir rolagem na página */
+        margin: 0; /* Remove margens padrão */
+        padding-top: 10px;
+      }
+
+      .sticky-box {
+        position: sticky; /* Fixa a posição do elemento quando atinge o topo */
+        top: 0; /* Fica no topo quando atinge essa posição */
+        background-color: lightblue; /* Cor de fundo */
+        padding: 10px; /* Espaçamento interno */
+        font-size: 20px; /* Tamanho da fonte */
+        z-index: 1000; /* Garante que fique acima de outros elementos */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-box">Div com Position Sticky</div>
+    <p>Role para ver o efeito...</p>
+    <p>Mais conteúdo aqui...</p>
+    <p>Mais conteúdo aqui...</p>
+    <p>Mais conteúdo aqui...</p>
+    <p>Mais conteúdo aqui...</p>
+    <p>Mais conteúdo aqui...</p>
+    <p>Mais conteúdo aqui...</p>
+    <p>Mais conteúdo aqui...</p>
+  </body>
+</html>
