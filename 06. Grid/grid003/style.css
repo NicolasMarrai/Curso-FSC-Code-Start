@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box2"
+    "box3 box4 box4";
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #ddd;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
