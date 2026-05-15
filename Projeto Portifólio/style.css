@@ -1,2 +1,152 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+}
+
+.navbar-container > ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-container li {
+  text-transform: uppercase;
+  margin-right: 40px;
+  color: white;
+  letter-spacing: 0.1rem;
+  opacity: 50%;
+  transition: opacity 0.3s;
+}
+
+.navbar-container li:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+/* Showcase */
+
+.showcase-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(image/showcase.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+}
+
+.showcase-container h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.showcase-container p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #eee;
+  border-bottom: 1.5px solid white;
+  padding: 0 8px 8px 8px;
+  letter-spacing: 0.15rem;
+}
+
+/* About Me */
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-me-content img {
+  width: 320px;
+  height: 320px;
+  margin-right: 50px;
+}
+
+.about-me-content p {
+  color: white;
+  line-height: 2rem;
+}
+
+/* HABILIDADES */
+
+.skills-content {
+  margin-top: 108px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-item {
+  background-color: #202020;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-content .skill-item:nth-child(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.skill-item span {
+  margin: 15px 0 15px 0;
+  color: white;
+  font-weight: 500;
+}
+
+.skill-item p {
+  color: white;
+  opacity: 75%;
+}
+
+/* Utilities */
+
+.section-container {
+  width: 100%;
+  background-color: #111;
+  padding: 120px 0 120px 0;
+}
+
+.section-content {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1.5px solid #fff;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
