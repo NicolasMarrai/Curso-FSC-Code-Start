@@ -10,6 +10,13 @@ a {
   text-decoration: none;
 }
 
+/* Nav links */
+.navbar-container a {
+  color: white;
+  padding: 6px 10px;
+  display: inline-block;
+}
+
 /* Navbar */
 .navbar-container {
   width: 100%;
@@ -73,6 +80,23 @@ a {
   padding-left: 8px;
   padding-right: 8px;
   letter-spacing: 0.15rem;
+}
+
+/* CV button */
+.cv-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ffffff22;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cv-button:hover {
+  opacity: 0.9;
 }
 
 /* SOBRE MIM */
@@ -193,6 +217,21 @@ a {
   max-width: 600px;
 }
 
+.project-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 16px;
+  background-color: #fff;
+  color: #111;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-button:hover {
+  opacity: 0.95;
+}
+
 .project-item p {
   color: white;
   opacity: 75%;
@@ -287,4 +326,39 @@ a {
 
 .form-button:hover {
   cursor: pointer;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-me-content img {
+    margin: 0 0 20px 0;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-text {
+    margin: 20px 0 0 0;
+  }
+
+  .navbar-container {
+    justify-content: center;
+    position: fixed;
+  }
+
+  .showcase-container > h1 {
+    font-size: 2.5rem;
+  }
 }
