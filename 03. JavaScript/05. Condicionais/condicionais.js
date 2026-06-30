@@ -28,34 +28,34 @@ let sum2 = 3 + 3;
 
 // Usando AND
 if (sum1 === 4 && sum2 === 6) {
-    console.log("sum1 is 4 and sum2 is 6");
+  console.log("sum1 is 4 and sum2 is 6");
 } else {
-    console.log("One or both conditions are false");
+  console.log("One or both conditions are false");
 }
 
 // Usando OR
 if (sum1 === 4 || sum2 === 6) {
-    console.log("At least one condition is true");
+  console.log("At least one condition is true");
 } else {
-    console.log("Both conditions are false");
+  console.log("Both conditions are false");
 }
 
-let number = (sum === 2) ? 2 : 4;
+let number = sum === 2 ? 2 : 4;
 
 console.log(number); // Deve imprimir 4, pois sum não é igual a 2
 
 let car = "Tesla";
 
 switch (car) {
-    case "Mercedes":
-        console.log("Mercedes is beautiful");
-        break;
-    case "Ferrari":
-        console.log("Ferrari is very red");
-        break;
-    case "Tesla":
-        console.log("Tesla is very smart");
-        break;
-    default:
-        console.log("Unknown car");
+  case "Mercedes":
+    console.log("Mercedes is beautiful");
+    break;
+  case "Ferrari":
+    console.log("Ferrari is very red");
+    break;
+  case "Tesla":
+    console.log("Tesla is very smart");
+    break;
+  default:
+    console.log("Unknown car");
 }
