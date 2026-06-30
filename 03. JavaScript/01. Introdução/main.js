@@ -18,6 +18,7 @@ console.log(number - 10);
 console.log(number * 5);
 console.log(number / 2);
 console.log(number.toString());
+console.log(typeof number);
 console.log(typeof number.toString());
 
 // Booleans
@@ -29,5 +30,3 @@ console.log(2 == 2);
 //Null e Undefined
 const x = null;
 const y = undefined;
-
-
