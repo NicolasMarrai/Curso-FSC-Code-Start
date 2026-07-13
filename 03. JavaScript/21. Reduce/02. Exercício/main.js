@@ -3,6 +3,6 @@ const letras = ["A", "B", "C", "D"];
 
 const valoresDasLetras = letras.reduce((aux, letra) => {
   return aux + letra;
-}, 0);
+}, "");
 
 console.log(valoresDasLetras);
