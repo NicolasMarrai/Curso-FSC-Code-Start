@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Formulário</title>
   </head>
   <body>
@@ -11,8 +18,8 @@
         <h2>Criar uma Conta</h2>
       </div>
 
-      <form id="form">
-        <div class="form-control">
+      <form id="form" class="form">
+        <div class="form-control error">
           <label for="username">Usuário</label>
           <input
             type="text"
@@ -20,23 +27,23 @@
             placeholder="Digite seu Nome de Usuário"
           />
           <i class="fa-solid fa-circle-exclamation"></i>
-          <i class="fas fa-check-circle"></i>
+          <i class="fa-solid fa-circle-check"></i>
           <small>Mensagem de erro</small>
         </div>
 
-        <div class="form-control">
+        <div class="form-control error">
           <label for="email">Email</label>
           <input type="text" id="email" placeholder="Digite seu Email" />
           <i class="fa-solid fa-circle-exclamation"></i>
-          <i class="fas fa-check-circle"></i>
+          <i class="fa-solid fa-circle-check"></i>
           <small>Mensagem de erro</small>
         </div>
 
-        <div class="form-control">
+        <div class="form-control success">
           <label for="password">Senha</label>
           <input type="text" id="password" placeholder="Digite sua Senha" />
           <i class="fa-solid fa-circle-exclamation"></i>
-          <i class="fas fa-check-circle"></i>
+          <i class="fa-solid fa-circle-check"></i>
           <small>Mensagem de erro</small>
         </div>
 
@@ -48,7 +55,7 @@
             placeholder="Digite sua Senha Novamente"
           />
           <i class="fa-solid fa-circle-exclamation"></i>
-          <i class="fas fa-check-circle"></i>
+          <i class="fa-solid fa-circle-check"></i>
           <small>Mensagem de erro</small>
         </div>
 
